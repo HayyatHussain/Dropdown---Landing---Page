@@ -1,1 +1,1 @@
-C:\Users\User 2\Desktop\intro-section-with-dropdown-navigation-main\intro-section-with-dropdown-navigation-main\design\desktop-preview.jpg
+#![desktop-preview](https://github.com/HayyatHussain/Dropdown-Landing-Page/assets/145599914/cacea95b-3d29-48cf-bb1c-e51185e35b36)
