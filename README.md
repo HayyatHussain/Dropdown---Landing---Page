@@ -1,4 +1,4 @@
 ### <h2>Lots and lots of dropdowns!</h2><br>
 
 
-![Uploading active-states.jpg…]()
+"C:\Users\User 2\Desktop\intro-section-with-dropdown-navigation-main\intro-section-with-dropdown-navigation-main\design\active-states.jpg"
