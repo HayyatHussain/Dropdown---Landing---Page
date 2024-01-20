@@ -1,3 +1,4 @@
-/*
-EMPTY FOR NOW ~ ADMIN
-*/
+const sideBars = document.querySelector(".side-bars");
+sideBars.addEventListener("click", () => {
+    alert("acac");
+})
