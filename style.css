@@ -176,6 +176,15 @@ Main - Content Styles
     flex-wrap: wrap;
     gap: 9%;
     row-gap: 15px;
+    color: #ADADAD;
+}
+
+#main #main-content #logos .logo {
+    transition: all 300ms ease-in;
+}
+
+#main #main-content #logos .logo:hover {
+    color: #000;
 }
 
 
