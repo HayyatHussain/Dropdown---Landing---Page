@@ -192,7 +192,7 @@ Main - Content Styles
 Media Queries
 */
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
     header .desktop-design {
         display: block;
         display: flex;
@@ -276,7 +276,7 @@ Media Queries
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
     header .desktop-design {
         column-gap: 70px;
     }
