@@ -1,7 +1,11 @@
 const sideBars = document.querySelector(".side-bars"),
     navCross = document.querySelector("header #menu .menu-container-2 svg"),
     navMenu = document.querySelector("header #menu"),
-    menuLinks = document.querySelectorAll("header #menu .menu-container-2 p");
+    menuLinks = document.querySelectorAll("header #menu .menu-container-2 p"),
+    desktopDialog1 = document.getElementById("dialog-1-desktop"),
+    desktopDialog2 = document.getElementById("dialog-1-desktop"),
+    embeddedDialog1 = document.getElementById("embedded-desktop-dialog-p-1"),
+    embeddedDialog2 = document.getElementById("embedded-desktop-dialog-p-2");
 
 let timeoutArray = [];
 
@@ -45,3 +49,4 @@ navCross.addEventListener("click", () => {
     });
     timeoutArray = [];
 });
+
