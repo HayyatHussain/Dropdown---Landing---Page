@@ -3,9 +3,9 @@ const sideBars = document.querySelector(".side-bars"),
     navMenu = document.querySelector("header #menu"),
     menuLinks = document.querySelectorAll("header #menu .menu-container-2 p"),
     desktopDialog1 = document.getElementById("dialog-1-desktop"),
-    desktopDialog2 = document.getElementById("dialog-1-desktop"),
-    embeddedDialog1 = document.getElementById("embedded-desktop-dialog-p-1"),
-    embeddedDialog2 = document.getElementById("embedded-desktop-dialog-p-2");
+    desktopDialog2 = document.getElementById("dialog-2-desktop"),
+    embeddedDialog1 = document.querySelector(".dialog-container-1"),
+    embeddedDialog2 = document.querySelector(".dialog-container-2");
 
 let timeoutArray = [];
 
@@ -50,3 +50,22 @@ navCross.addEventListener("click", () => {
     timeoutArray = [];
 });
 
+// Desktop Dialogs shown on hover +++ svg positioning
+
+
+// Show the dialog
+const showDialog = (dialog) => {
+    dialog.style.display = "block";
+}
+
+// Hide the dialog
+const hideDialog = (dialog) => {
+    dialog.style.display = "none";
+}
+embeddedDialog1.addEventListener("mouseenter", () => showDialog(desktopDialog1));
+
+embeddedDialog1.addEventListener("mouseleave", () => hideDialog(desktopDialog1));
+
+embeddedDialog2.addEventListener("mouseenter", () => showDialog(desktopDialog2));
+
+embeddedDialog2.addEventListener("mouseleave", () => hideDialog(desktopDialog2));

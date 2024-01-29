@@ -277,6 +277,7 @@ Media Queries
 
 
     dialog {
+        display: none;
         border: none;
         background-color: #fff;
         border-radius: 10px;
@@ -305,7 +306,7 @@ Media Queries
     }
 
     #dialog-2-desktop {
-        margin-left: 35vw;
+        margin-left: 32vw;
         width: 100px;
         height: 100px;
         text-align: center;
@@ -356,6 +357,12 @@ Media Queries
 
     #main #main-content #logos {
         column-gap: 25px;
+    }
+}
+
+@media (min-width: 1350px) {
+    #dialog-2-desktop {
+        margin-left: 29vw;
     }
 }
 
