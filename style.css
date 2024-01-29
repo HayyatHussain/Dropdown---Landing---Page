@@ -13,6 +13,7 @@ Shared Styles
 body {
     font-family: 'Epilogue', sans-serif;
     overflow-x: hidden;
+    background-color: hsl(0, 0%, 98%);
 }
 
 svg {
@@ -274,6 +275,33 @@ Media Queries
         line-height: 0.9;
     }
 
+
+    dialog {
+        border: none;
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    #dialog-1-desktop {
+        margin-left: 16vw;
+        width: 170px;
+        height: 145px;
+    }
+
+    .dialog-content-container p {
+        display: block !important;
+        font-size: 15.2px;
+        line-height: 0.4;
+    }
+
+    .the-dutiful-p {
+        margin-top: 22.5px;
+    }
+
+
 }
 
 @media (min-width: 1100px) {
@@ -329,4 +357,12 @@ Media Queries
     #main #main-content {
         margin-top: 100px;
     }
+}
+
+/*
+Finally the dropdown styles, i.e., dialogs
+*/
+
+.dialog-container p {
+    display: inline;
 }
