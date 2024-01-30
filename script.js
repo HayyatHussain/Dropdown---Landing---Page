@@ -13,6 +13,8 @@ const sideBars = document.querySelector(".side-bars"),
     insertedDialog2Mobile = document.querySelector(".inserted-dialog-2"),
     svg1Desktop = document.querySelector(".svg-translation-1-desktop"),
     svg2Desktop = document.querySelector(".svg-translation-2-desktop"),
+    svg1Mobile = document.querySelector(".mobile-svg-1-translation"),
+    svg2Mobile = document.querySelector(".mobile-svg-2-translation"),
     leftMenuContainer = document.querySelector(".menu-container-1");
 
 let timeoutArray = [];
@@ -127,15 +129,19 @@ embeddedDialog2.addEventListener("mouseleave", () => {
 embeddedDialog1Mobile.addEventListener("click", () => {
     if (testUnit) {
         showDialog(insertedDialog1Mobile);
+        svg1Mobile.style.transform = "rotate(180deg)";
     } else {
         hideDialog(insertedDialog1Mobile);
+        svg1Mobile.style.transform = "rotate(360deg)";
     }
 });
 
 embeddedDialog2Mobile.addEventListener("click", () => {
     if (testUnit) {
         showDialog(insertedDialog2Mobile);
+        svg2Mobile.style.transform = "rotate(180deg)";
     } else {
         hideDialog(insertedDialog2Mobile);
+        svg2Mobile.style.transform = "rotate(360deg)";
     }
 });
