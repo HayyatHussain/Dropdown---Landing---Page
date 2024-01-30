@@ -5,7 +5,11 @@ const sideBars = document.querySelector(".side-bars"),
     desktopDialog1 = document.getElementById("dialog-1-desktop"),
     desktopDialog2 = document.getElementById("dialog-2-desktop"),
     embeddedDialog1 = document.querySelector(".dialog-container-1"),
-    embeddedDialog2 = document.querySelector(".dialog-container-2");
+    embeddedDialog2 = document.querySelector(".dialog-container-2"),
+    mobileDialog1 = document.querySelector(".dialog-container-1"),
+    mobileDialog2 = document.querySelector(".dialog-container-1"),
+    embeddedDialog1Mobile = document.querySelector(".dialog-1-mobile"),
+    embeddedDialog2Mobile = document.querySelector(".dialog-2-mobile");
 
 let timeoutArray = [];
 
@@ -50,8 +54,11 @@ navCross.addEventListener("click", () => {
     timeoutArray = [];
 });
 
-// Desktop Dialogs shown on hover +++ svg positioning
+/* 
+    Desktop Dialogs shown on hover +++ svg positioning
+*/
 
+// P.S. Tried the showModal() method, but it fluctuates so all that dialog setup was a waste, could've just used a div....
 
 // Show the dialog
 const showDialog = (dialog) => {
@@ -69,3 +76,14 @@ embeddedDialog1.addEventListener("mouseleave", () => hideDialog(desktopDialog1))
 embeddedDialog2.addEventListener("mouseenter", () => showDialog(desktopDialog2));
 
 embeddedDialog2.addEventListener("mouseleave", () => hideDialog(desktopDialog2));
+
+
+/* 
+
+    Mobile Dialogs shown on Click
+
+*/
+
+embeddedDialog1Mobile.addEventListener("click", (event) => {
+    alert("click")
+})
