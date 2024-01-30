@@ -54,7 +54,7 @@ button:hover {
 }
 
 .svg-translation-1-desktop, .svg-translation-2-desktop, .mobile-svg-1-translation, .mobile-svg-2-translation {
-    transition: all 240ms !important;
+    transition: all 250ms !important;
 }
 
 /*

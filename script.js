@@ -129,9 +129,11 @@ embeddedDialog2.addEventListener("mouseleave", () => {
 embeddedDialog1Mobile.addEventListener("click", () => {
     if (testUnit) {
         showDialog(insertedDialog1Mobile);
+        // Arrow svg positioning
         svg1Mobile.style.transform = "rotate(180deg)";
     } else {
         hideDialog(insertedDialog1Mobile);
+        // Arrow svg positioning
         svg1Mobile.style.transform = "rotate(360deg)";
     }
 });
@@ -139,9 +141,11 @@ embeddedDialog1Mobile.addEventListener("click", () => {
 embeddedDialog2Mobile.addEventListener("click", () => {
     if (testUnit) {
         showDialog(insertedDialog2Mobile);
+        // Arrow svg positioning
         svg2Mobile.style.transform = "rotate(180deg)";
     } else {
         hideDialog(insertedDialog2Mobile);
+        // Arrow svg positioning
         svg2Mobile.style.transform = "rotate(360deg)";
     }
 });
