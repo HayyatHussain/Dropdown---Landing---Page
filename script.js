@@ -12,7 +12,8 @@ const sideBars = document.querySelector(".side-bars"),
     insertedDialog1Mobile = document.querySelector(".inserted-dialog-1"),
     insertedDialog2Mobile = document.querySelector(".inserted-dialog-2"),
     svg1Desktop = document.querySelector(".svg-translation-1-desktop"),
-    svg2Desktop = document.querySelector(".svg-translation-2-desktop");
+    svg2Desktop = document.querySelector(".svg-translation-2-desktop"),
+    leftMenuContainer = document.querySelector(".menu-container-1");
 
 let timeoutArray = [];
 
@@ -42,7 +43,8 @@ sideBars.addEventListener("click", () => {
     });
 });
 
-navCross.addEventListener("click", () => {
+
+const menuClose = () => {
     navMenu.style.width = "0%";
 
     menuLinks.forEach(link => {
@@ -54,13 +56,20 @@ navCross.addEventListener("click", () => {
     timeoutArray.forEach(timeoutId => {
         clearTimeout(timeoutId);
     });
+
     timeoutArray = [];
 
     // Get rid of the mobile dropdowns when the menu is closed
     hideDialog(insertedDialog1Mobile);
     hideDialog(insertedDialog2Mobile);
 
-});
+}
+
+// Close the menu when the cross (X) icon is clicked
+navCross.addEventListener("click", menuClose);
+
+// Close the menu when the user clicks the left menu div (the one with the opacity)
+leftMenuContainer.addEventListener("click", menuClose);
 
 /* 
 
