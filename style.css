@@ -193,8 +193,13 @@ Main - Content Styles
 */
 
 .inserted-dialog {
-    margin-left: 10px;
+    margin-left: 15px;
     display: none;
+}
+
+.inserted-dialog p {
+    line-height: 0.65;
+    font-size: 15px;
 }
 
 .dialog-container p {
