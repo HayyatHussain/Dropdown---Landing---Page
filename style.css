@@ -197,6 +197,10 @@ Main - Content Styles
     display: none;
 }
 
+.dialog-container p {
+    display: inline;
+}
+
 
 /*
 Media Queries
@@ -387,12 +391,4 @@ Media Queries
     #main #main-content {
         margin-top: 100px;
     }
-}
-
-/*
-Finally the dropdown styles, i.e., dialogs
-*/
-
-.dialog-container p {
-    display: inline;
 }
