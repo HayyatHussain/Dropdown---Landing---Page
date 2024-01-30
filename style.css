@@ -75,7 +75,7 @@ header #menu {
     position: absolute;
     z-index: 10;
     width: 0;
-    height: 100vh;
+    min-height: 100vh;
     top: 0;
     right: 0;
     transition: all 100ms ease-out;
@@ -186,6 +186,15 @@ Main - Content Styles
 
 #main #main-content #logos .logo:hover {
     color: #000;
+}
+
+/*
+    Dialog boxes/dropdowns for the mobile
+*/
+
+.inserted-dialog {
+    margin-left: 10px;
+    display: none;
 }
 
 
