@@ -53,6 +53,11 @@ navCross.addEventListener("click", () => {
         clearTimeout(timeoutId);
     });
     timeoutArray = [];
+
+    // Get rid of the mobile dropdowns when the menu is closed
+    hideDialog(insertedDialog1Mobile);
+    hideDialog(insertedDialog2Mobile);
+
 });
 
 /* 
