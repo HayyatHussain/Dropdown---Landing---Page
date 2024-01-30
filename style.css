@@ -53,6 +53,10 @@ button:hover {
     overflow-x: hidden;
 }
 
+.svg-translation-1-desktop, .svg-translation-2-desktop {
+    transition: all 240ms !important;
+}
+
 /*
 Moblie - Navigation Panel Styles
 */

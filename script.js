@@ -10,7 +10,9 @@ const sideBars = document.querySelector(".side-bars"),
     embeddedDialog1Mobile = document.querySelector(".dialog-1-mobile"),
     embeddedDialog2Mobile = document.querySelector(".dialog-2-mobile"),
     insertedDialog1Mobile = document.querySelector(".inserted-dialog-1"),
-    insertedDialog2Mobile = document.querySelector(".inserted-dialog-2");
+    insertedDialog2Mobile = document.querySelector(".inserted-dialog-2"),
+    svg1Desktop = document.querySelector(".svg-translation-1-desktop"),
+    svg2Desktop = document.querySelector(".svg-translation-2-desktop");
 
 let timeoutArray = [];
 
@@ -83,22 +85,35 @@ const hideDialog = (dialog) => {
     testUnit = true;
 }
 
-embeddedDialog1.addEventListener("mouseenter", () => showDialog(desktopDialog1));
+embeddedDialog1.addEventListener("mouseenter", () => {
+    showDialog(desktopDialog1);
+    // Arrow svg positioning
+    svg1Desktop.style.transform = "rotate(180deg)";
+});
 
-embeddedDialog1.addEventListener("mouseleave", () => hideDialog(desktopDialog1));
+embeddedDialog1.addEventListener("mouseleave", () => {
+    hideDialog(desktopDialog1);
+    // Arrow svg positioning
+    svg1Desktop.style.transform = "rotate(360deg)";
+});
 
-embeddedDialog2.addEventListener("mouseenter", () => showDialog(desktopDialog2));
+embeddedDialog2.addEventListener("mouseenter", () => {
+    showDialog(desktopDialog2);
+    // Arrow svg positioning
+    svg2Desktop.style.transform = "rotate(180deg)";
+});
 
-embeddedDialog2.addEventListener("mouseleave", () => hideDialog(desktopDialog2));
-
+embeddedDialog2.addEventListener("mouseleave", () => {
+    hideDialog(desktopDialog2)
+    // Arrow svg positioning
+    svg2Desktop.style.transform = "rotate(360deg)";
+});
 
 /* 
 
     Mobile Dialogs shown on Click
 
 */
-
-
 
 embeddedDialog1Mobile.addEventListener("click", () => {
     if (testUnit) {
